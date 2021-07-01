@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLightColor"
+    android:orientation="vertical"
+    tools:context=".Activity.BookingActivity">
+
+    <LinearLayout
+        android:id="@+id/tickets_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primaryColor">
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:background="#00000000"
+            android:onClick="goBack"
+            android:layout_gravity="center"
+            android:tint="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/settings_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Booking Summary"
+            android:layout_marginTop="-6dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <RelativeLayout
+
+        android:id="@+id/booking_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ticket_corner_res"
+        android:clipToPadding="false"
+        android:elevation="50dp"
+        android:padding="10dp"
+        android:transitionName="ticketItemLayout"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/booking_logo_layout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="ticketLogoLayout"
+
+            >
+
+            <ImageView
+                android:id="@+id/booking_logo"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <ProgressBar
+                android:id="@+id/booking_progress"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/black" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/ticket_price"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booking_logo_layout"
+            android:layout_marginTop="10dp"
+            android:text="Price: 150$"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:transitionName="ticketPrice"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/booking_road_image"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:transitionName="roadImage"
+            android:layout_marginEnd="45dp"
+            android:src="@drawable/way" />
+
+        <TextView
+            android:id="@+id/booking_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="145dp"
+            android:text="15:30"
+            android:textColor="@color/black"
+            android:transitionName="startTime"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/booking_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="16:30"
+            android:transitionName="endTime"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/booking_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="3s"
+                android:transitionName="totalTime"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/booking_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ticket_price"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booking_line"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/doppio_one"
+                android:text="Details:"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/booking_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/armata"
+                android:text="Caaabin baggage(7kg)\n\nWifi not available\n\nAirbus 320\n\nWifi not available\n\nCabin baggage(7kg)"
+                android:textColor="#494848" />
+
+            <TextView
+                android:id="@+id/seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/doppio_one"
+                android:text="Seat:"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/select_seat_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#D1A520"
+                    android:elevation="25dp"
+                    android:fontFamily="@font/armata"
+                    android:text="Select seat"
+                    android:onClick="selectSeat"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seat_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Seat price: 0$"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/auto_seat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you do not choose a seat, it will be selected automatically"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/boarding_passenger_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passenger Info"
+                    android:fontFamily="@font/doppio_one"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/boarding_passenger_info_text"
+                    android:text="*"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red"
+                    android:paddingBottom="10dp"
+                    android:textSize="28sp"/>
+                <Button
+                    android:id="@+id/add_passenger_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:backgroundTint="#E60A2B"
+                    android:elevation="25dp"
+                    android:onClick="addInfo"
+                    android:fontFamily="@font/armata"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/booking_pay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ticket_corner_res"
+        android:clipToPadding="false"
+        android:elevation="50dp"
+        android:padding="20dp"
+
+        >
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/anton"
+            android:text="Total Price: 150$"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E60A2B"
+            android:elevation="25dp"
+            android:fontFamily="@font/armata"
+            android:text="Pay"
+            android:onClick="pay"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</LinearLayout>

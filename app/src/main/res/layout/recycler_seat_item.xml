@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    >
+    <LinearLayout
+        android:id="@+id/seat_line_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/seat_a"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+
+            android:background="@drawable/border_res"
+            android:text="A12"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/seat_b"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/border_res"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="A1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/seat_c"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/border_res"
+            android:padding="5dp"
+            android:text="A1"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/seat_num"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/seat_d"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/border_res"
+            android:padding="5dp"
+            android:text="D11"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/seat_e"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_res"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="A1"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/seat_f"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border_res"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="A1"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

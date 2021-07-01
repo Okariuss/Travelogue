@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg3"
+    android:orientation="vertical"
+    tools:context=".Activity.HomeActivity"
+    android:animateLayoutChanges="true"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:transitionName="toToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar_linear2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toolbar_logo"
+
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/toolbar_logo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:gravity="center"
+                android:transitionName="logo_name"
+                android:text="Travelogue"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/toolbar_relative"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/boom_menu_button"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="2dp"
+                app:bmb_normalColor="@color/primaryColor"
+                app:bmb_shadowEffect="false"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_menu_24"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_menu_button"/>
+
+            </com.nightonke.boommenu.BoomMenuButton>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/frame_layout"
+        app:layout_constraintBottom_toTopOf="@+id/meow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_linear"
+        app:layout_constraintVertical_bias="0.519" />
+
+
+
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/meow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mbn_selectedIconColor="@color/white"
+        app:mbn_defaultIconColor="@color/black"
+        app:mbn_countBackgroundColor="@color/red"
+
+        app:mbn_backgroundBottomColor="@color/primaryColor"
+        app:mbn_circleColor="@color/primaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

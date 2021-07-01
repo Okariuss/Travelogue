@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/hotel_item_container_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="39dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="39dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/hotel_corner_res"
+    android:elevation="40dp"
+    android:transitionName="containerLayout"
+    >
+
+    <ImageView
+        android:id="@+id/hotel_item_logo"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"
+        android:transitionName="logoImage"
+        />
+    <ProgressBar
+        android:id="@+id/hotel_item_progress"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:indeterminateTint="@color/black"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="17.5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/hotel_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hotel_item_logo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/baloo"
+        android:textColor="@color/black"
+        android:text="Okada"
+        android:textSize="20sp"
+        android:transitionName="hotelName"
+        />
+
+    <RatingBar
+        android:id="@+id/hotel_item_rating_bar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hotel_name_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="3dp"
+        android:progressTint="#000000"
+        android:rating="3.5"
+        android:transitionName="hotelRate"
+
+        />
+
+
+    <TextView
+        android:id="@+id/hotel_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hotel_item_rating_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/amarante"
+        android:transitionName="hotelAddress"
+        android:text="14 Ismayil Hidayat Zadeh, Baku, Azerbaycan"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/hotel_item_room_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/baloo"
+        android:text="85$"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/room_count_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:transitionName="roomCount"
+
+        >
+
+        <TextView
+            android:id="@+id/hotel_item_room_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="3"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_meeting_room_24"
+            android:layout_gravity="center"
+            app:tint="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

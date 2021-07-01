@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLightColor"
+    android:orientation="vertical"
+    tools:context=".Activity.HelpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primaryColor">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:onClick="toBackActivity"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+        <TextView
+            android:id="@+id/settings_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="Help"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/doppio_one"
+                android:text="FREQUENTLY ASKED QUESTIONS"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="CANCELLATION / REFUND"
+                android:textSize="20dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* I want to cancel my ticket."
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="Click on the ‘Cancel Ticket’ field in the app.\n\n
+Display your relevant ticket by typing the PNR No and last name you want to trade in the PNR No field that we forwarded to you at the time of purchase.\n\n
+You will be provided with options to cancel the ticket.\n\n
+Cancel button will show you the refund amount."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* I'd like to refund my ticket."
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="Click on the ‘Cancel Ticket’ field in the app.\n\n
+Display your relevant ticket by typing the PNR No and last name you want to trade in the PNR No field that we forwarded to you at the time of purchase.\n\n
+You will be provided with options to cancel the ticket.\n\n
+Cancel button will show you the refund amount."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* When does my money come to me when I cancel my ticket?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="A refund of the fee that you canceled will be transmitted by us to the bank on the same day and will be made by the bank.\n\n
+Refunds may vary from 3 (three) business days to 7 (seven) business days, depending on the bank where your credit card is located.\n\n
+The return period of transactions with debit cards may be extended to 7 (seven) business days due to interbank procedures."/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="CHANGE"
+                android:textSize="20dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* Can I change the date and/ or course on my ticket?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="All changes related to the ticket can be made in accordance with the airline rules +90 544 804 80 28 and +90 507 189 30 95 you can get help on our numbered support line.\n\n
+After the purchase of the ticket, in case of a change in the date or course for the relevant ticket, within the rules established by the airlines, along with a change penalty and possible price difference, if any, a service fee of 15 euros for your international tickets and 15 US dollars for your domestic tickets will be charged.\n"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* What are the airline rules for change operations?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="Cancellation, refund and change rules are available in the “flight rules” section of our website for your preferred flight during the ticket purchase process or at the option booking stage.\n\n
+Since each airline has different applications for cancellations, refunds and changes to the prices it offers for sale, we recommend that you read these rules carefully before buying your ticket. In particular, promotional class tickets are not allowed to change and/or refund due to the limited rules established by the relevant airline.\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* Can I change the name on my ticket?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="It is not possible to change the name of the reservation or purchased tickets and transfer the purchased ticket to another name.\n\n
+Before making a purchase, we strongly remind you to check your information.\n\n
+From the cancel ticket tab, we strongly ask you to check the cancellation/refund rules for your ticket.\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* I made a letter mistake in my name. How can I fix it?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="According to the airline rule, unfortunately, no intervention can be made on the purchased tickets to the first and last name.\n\n
+The name written on the ticket, the last name number; must be exactly the same as your ID/passport information. This requirement is a rule created by the airline for your flight safety.\n\n
+For tickets issued with incorrect information, the airline or agent cannot provide any guarantees regarding your flight.\n\n
+Please check the cancellation/refund rules of your ticket on the cancellation tab.\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="BAGGAGE PROCESS"
+                android:textSize="20dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* How much is my baggage allowance?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="According to airline sales policies, baggage and non-baggage tickets can be offered for sale on many airlines. Before purchasing your ticket, you can make your transaction by clicking on the ‘detail’ section under flight information or the 'flight rules' field, checking the baggage information and your right to carry. If you have made the purchase, you can find detailed information about your baggage information by clicking on the “e-ticket” detail in the flight details Information section that we have sent to you.\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* How much do I get for hand luggage?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="The right to carry luggage varies according to airline practices. Current information about the right to carry hand luggage and a list of other items that are allowed to be carried free of charge with passengers in the cabin as hand luggage can be checked through the respective airlines ' own web pages.\n\n
+If there is no room in the cabin, these items are carried as checked baggage.\n\n
+It is not possible to add the right to hand luggage to the right to free baggage.\n"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="* Want to buy extra luggage? What had I better do?"
+                android:textSize="17dp"
+                android:fontFamily="@font/doppio_one"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/brawler"
+                android:textSize="15sp"
+                android:text="For information about extra baggage, +90 544 804 80 28 or +90 507 189 30 95 you can request assistance from our support line.\n"/>
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

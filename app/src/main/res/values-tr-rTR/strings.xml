@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Travelogue</string>
+    <string name="forgot_password_underline"><u>Şifreni mi Unuttun?</u></string>
+    <string name="sign_up_underline"><u>Kayıt Ol</u></string>
+    <string name="sign_in_underline"><u>Giriş Yap</u></string>
+    <string name="popup_help">Yardım</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="settings">Ayarlar</string>
+    <string name="language">Dil</string>
+    <string name="currency">Para Birimi</string>
+    <string name="country">Ülke</string>
+    <string name="terms_conditions">Şartlar ve Koşullar</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="english">İNGİLİZCE</string>
+    <string name="turkish">TÜRKÇE</string>
+    <string name="usa">ABD</string>
+    <string name="turkey">TÜRKİYE</string>
+    <string name="russia">RUSYA</string>
+    <string name="dollar">DOLAR</string>
+    <string name="tl">TL</string>
+    <string name="ruble">RUBLE</string>
+    <string name="skip">ATLA</string>
+    <string name="change_password">Şifre Değiştir</string>
+    <string name="old_password">Eski Şifre</string>
+    <string name="new_password">Yeni Şifre</string>
+    <string name="confirm_new_password">Yeni Şifreyi Onayla </string>
+    <string name="terms_contidions">Şart ve Koşullar</string>
+    <string name="edit_profile">Profili Düzenle</string>
+    <string name="name">Ad</string>
+    <string name="surname">Soyad</string>
+    <string name="date_of_birthday">Doğum Tarihi</string>
+    <string name="save_changes">DEĞİŞİKLİKLERİ KAYDET</string>
+    <string name="forgot_password">Şifreni mi unuttun?</string>
+    <string name="dont_worry">Merak etmeyin! Sadece e-postanızı girin ve size şifrenizi sıfırlamanız için bir bağlantı gönderelim. </string>
+    <string name="e_mail">E-posta</string>
+    <string name="reset_password">Şifreyi Sıfırla</string>
+    <string name="welcome_back">Tekrar Hoşgeldiniz</string>
+    <string name="sign_in_to_continue">Devam etmek için oturum açın</string>
+    <string name="password">Şifre</string>
+    <string name="sign_in">OTURUM AÇ</string>
+    <string name="or">VEYA</string>
+    <string name="google_sign_in">GOOGLE GİRİŞİ</string>
+    <string name="dont_you_have_account">Hesabın yok mu?</string>
+    <string name="sign_up_to_countinue">Devam etmek için kaydolun</string>
+    <string name="welcome">Hoşgeldiniz</string>
+    <string name="next">Sonraki</string>
+    <string name="already_have_account">Zaten hesabınız var mı?</string>
+    <string name="confirm_password">Şifreyi Tekrarı</string>
+    <string name="create_account">HESAP OLUŞTUR</string>
+    <string name="choose_and_travel">Seç ve Seyahat Et</string>
+    <string name="travel">Seyahat</string>
+    <string name="hotel"> Otel</string>
+    <string name="cities">ŞEHİRLER</string>
+    <string name="cities_you_may_want">Gitmek isteyebileceğiniz şehirler</string>
+    <string name="compaines">ŞİRKETLER</string>
+    <string name="companies_we_work">Çalıştığımız firmalar</string>
+    <string name="news_announcement">Haber ve Duyurular</string>
+    <string name="change_profile_photo">Profil Fotoğrafını Değiştir</string>
+    <string name="sign_out">OTURUMU KAPAT</string>
+    <string name="please_login_to_view">Bu pencereyi görüntülemek için lütfen giriş yapın</string>
+    <string name="customer_assistant">Müşteri Temsilcisi</string>
+    <string name="enter_message">Mesaj yazınız</string>
+    <string name="plane">Uçak</string>
+    <string name="bus">Otobüs</string>
+    <string name="ship">Gemi</string>
+    <string name="quit">Uygulamadan çıkmak istediğinizden emin misiniz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="man">Erkek</string>
+    <string name="woman">Kadın</string>
+    <string name="booking_summary">Rezervasyon Özeti</string>
+    <string name="price">Fiyat</string>
+    <string name="h">s</string>
+    <string name="min">dk</string>
+    <string name="alphabet">Alfabe</string>
+    <string name="start">Başla</string>
+    <string name="finish">Bitiş</string>
+    <string name="add">Ekle</string>
+    <string name="details">Detaylar</string>
+    <string name="seat">Koltuk</string>
+    <string name="select_seat">Koltuk Seçin</string>
+    <string name="seat_price">Koltuk Fiyatı</string>
+    <string name="auto_seat">Bir koltuk seçmezseniz, otomatik olarak seçilecektir.</string>
+    <string name="save">KAYDET</string>
+    <string name="passenger_info">Yolcu Bilgileri</string>
+    <string name="must_filled">Tüm boşluklar doldurulmalıdır!</string>
+    <string name="pay">Satın Al</string>
+    <string name="total_price">Toplam Fiyat</string>
+    <string name="passenger">Yolcu</string>
+    <string name="gender">Cinsiyet</string>
+    <string name="document_no">Belge No</string>
+    <string name="country_document">Ülke Belgesi</string>
+    <string name="select_seat_for">Yolcu(lar) İçin Koltuk Seçiniz: </string>
+    <string name="busy_seat">Dolu Koltuk</string>
+    <string name="large_seat">Geniş Koltuk</string>
+    <string name="empty_seat">Boş Koltuk</string>
+    <string name="select">seç</string>
+    <string name="seat_header">Koltuk Seçimi</string>
+    <string name="tickets">Biletler</string>
+    <string name="add_total">Geniş alanlı koltukları seçerseniz toplam fiyatınıza eklenecektir.</string>
+    <string name="pay_card_num">Kart Numarası</string>
+    <string name="pay_card_num_text">Kart numaranızı boşluksuz giriniz.</string>
+    <string name="payment_header">Ödeme</string>
+    <string name="pay_valid_until">Geçerlilik Tarihi</string>
+    <string name="month">Ay</string>
+    <string name="year">Yıl</string>
+    <string name="three_digit">Kartınızın arkasındaki 3 haneli sayı</string>
+    <string name="card_holder">Kart Sahibi</string>
+    <string name="card_holder_name">Kart sahibinin adını girin</string>
+    <string name="success_paid">Başarıyla Satın Alındı</string>
+    <string name="correct_card">Lütfen kart numarasını doğru şekilde doldurun</string>
+    <string name="date">Tarih</string>
+    <string name="find_your_hotel">Otelinizi Bulun</string>
+    <string name="city">Şehir</string>
+    <string name="hotels">Oteller</string>
+    <string name="entry_date">Giriş Tarihi</string>
+    <string name="leaving_date">Çıkış Tarihi</string>
+    <string name="room">Oda</string>
+    <string name="search">Ara</string>
+    <string name="from">Nereden</string>
+    <string name="to">Nereye</string>
+    <string name="select_date">Gidiş Tarihi</string>
+    <string name="passenger_num">Yolcu Sayısı</string>
+    <string name="travel_with_us">Farkı yaşamak için bizimle seyahat edin.</string>
+    <string name="room_count">Oda Sayısı</string>
+    <string name="booking">Rezervasyon</string>
+    <string name="description">Özellikler</string>
+    <string name="cannot_empty">boş olamaz.</string>
+    <string name="please_fill_date">Lütfen tarih metnini doğru doldurun</string>
+    <string name="seat_choose">Seçmeniz gereken koltuk sayısı:</string>
+    <string name="seat_count">Seçilen koltuk sayısı yolcu sayısından daha yüksek olamaz</string>
+    <string name="sign_favorite">Favorilere eklemek için oturum açın.</string>
+    <string name="passenger_info_form">Yolcu bilgi formu doldurulmalıdır.</string>
+
+
+    <string-array name="rooms">
+        <item>1 odalı</item>
+        <item>2 odalı</item>
+        <item>3 odalı</item>
+        <item>4 odalı</item>
+        <item>5 odalı</item>
+        <item>6 odalı</item>
+        <item>7 odalı</item>
+        <item>8 odalı</item>
+    </string-array>
+
+    <string-array name="passengers">
+        <item>1 Yolcu</item>
+        <item>2 Yolcu</item>
+        <item>3 Yolcu</item>
+        <item>4 Yolcu</item>
+        <item>5 Yolcu</item>
+        <item>6 Yolcu</item>
+        <item>7 Yolcu</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>↑Artan</item>
+        <item>↓Azalan</item>
+    </string-array>
+
+    <string-array name="alphabet">
+        <item>A dan Z</item>
+        <item>Z den A</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>Erkek</item>
+        <item>Kadın</item>
+    </string-array>
+
+
+    <string-array name="countries_array">
+        <item>Afganistan</item>
+        <item>Almanya</item>
+        <item>Amerika Birleşik Devletleri küçük dış Adaları</item>
+        <item>Amerika Birleşik Devletleri</item>
+        <item>Amerikan Samoası</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarktika</item>
+        <item>Antigua ve Barbuda</item>
+        <item>Arjantin</item>
+        <item>Arnavutluk</item>
+        <item>Aruba</item>
+        <item>Avustralya</item>
+        <item>Avusturya</item>
+        <item>Azerbaycan</item>
+        <item>Bahamalar</item>
+        <item>Bahreyn</item>
+        <item>Bangladeş</item>
+        <item>Barbados</item>
+        <item>Batı Sahra</item>
+        <item>Belarus</item>
+        <item>Belize</item>
+        <item>Belçika</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Birleşik Arap Emirlikleri</item>
+        <item>Bolivya</item>
+        <item>Bosna Hersek</item>
+        <item>Botsvana</item>
+        <item>Bouvet Adası</item>
+        <item>Brezilya</item>
+        <item>Brunei</item>
+        <item>Bulgaristan</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cape Verde</item>
+        <item>Cayman Adaları</item>
+        <item>Cebelitarık</item>
+        <item>Cezayir</item>
+        <item>Chad</item>
+        <item>Cibuti</item>
+        <item>Cocos (Keeling) Adaları</item>
+        <item>Cook Adaları</item>
+        <item>Çek Cumhuriyeti</item>
+        <item>Çin</item>
+        <item>Danimarka</item>
+        <item>Demokratik Kongo Cumhuriyeti</item>
+        <item>Dominik Cumhuriyeti</item>
+        <item>Dominika </item>
+        <item>Doğu Timor</item>
+        <item>Ekvador</item>
+        <item>Ekvator Ginesi</item>
+        <item>El Salvador</item>
+        <item>Endonezya</item>
+        <item>Eritre</item>
+        <item>Eski Yugoslav Makedonya Cumhuriyeti</item>
+        <item>Estonya</item>
+        <item>Etiyopya</item>
+        <item>Faeroe Adaları</item>
+        <item>Falkland Adaları</item>
+        <item>Fas</item>
+        <item>Fiji</item>
+        <item>Fildişi Sahili</item>
+        <item>Filipinler</item>
+        <item>Finlandiya</item>
+        <item>Fransa</item>
+        <item>Fransız Guyanası</item>
+        <item>Fransız Güney toprakları</item>
+        <item>Fransız Polinezyası</item>
+        <item>Gabon</item>
+        <item>Gambiya</item>
+        <item>Gana</item>
+        <item>Gine-Bissau</item>
+        <item>Gine</item>
+        <item>Grenada</item>
+        <item>Grönland</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guyana</item>
+        <item>Güney Afrika</item>
+        <item>Güney Georgia ve Güney Sandwich Adaları</item>
+        <item>Güney Kore</item>
+        <item>Güney Sudan</item>
+        <item>Gürcistan</item>
+        <item>Haiti</item>
+        <item>Heard Adası ve McDonald Adaları</item>
+        <item>Hindistan</item>
+        <item>Hollanda Antilleri</item>
+        <item>Hollanda</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hırvatistan</item>
+        <item>Irak</item>
+        <item>İngiliz Hint Okyanusu toprakları</item>
+        <item>İngiliz Virgin Adaları</item>
+        <item>İran</item>
+        <item>İrlanda</item>
+        <item>İspanya</item>
+        <item>İsrail</item>
+        <item>İsveç</item>
+        <item>İsviçre</item>
+        <item>İtalya</item>
+        <item>İzlanda</item>
+        <item>Jamaika</item>
+        <item>Japonya</item>
+        <item>Jordan</item>
+        <item>Kamboçya</item>
+        <item>Kamerun</item>
+        <item>Kanada</item>
+        <item>Karadağ</item>
+        <item>Katar</item>
+        <item>Kazakistan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kolombiya</item>
+        <item>Komorlar</item>
+        <item>Kongo </item>
+        <item>Kosta Rika</item>
+        <item>Kuveyt</item>
+        <item>Kuzey Kore</item>
+        <item>Kuzey Marianas</item>
+        <item>Küba</item>
+        <item>Kıbrıs</item>
+        <item>Kırgızistan</item>
+        <item>Laos</item>
+        <item>Lesotho</item>
+        <item>Letonya</item>
+        <item>Liberya</item>
+        <item>Libya</item>
+        <item>Lihtenştayn</item>
+        <item>Litvanya</item>
+        <item>Lübnan</item>
+        <item>Lüksemburg</item>
+        <item>Macaristan</item>
+        <item>Madagaskar</item>
+        <item>Makao</item>
+        <item>Malavi</item>
+        <item>Maldivler</item>
+        <item>Malezya</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Adaları</item>
+        <item>Martinik</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Meksika</item>
+        <item>Mikronezya</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Montserrat</item>
+        <item>Moritanya</item>
+        <item>Mozambik</item>
+        <item>Moğolistan</item>
+        <item>Myanmar</item>
+        <item>Mısır</item>
+        <item>Namibya</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Nijer</item>
+        <item>Nijerya</item>
+        <item>Nikaragua</item>
+        <item>Niue</item>
+        <item>Noel Adası</item>
+        <item>Norfolk Adası</item>
+        <item>Norveç</item>
+        <item>Orta Afrika Cumhuriyeti</item>
+        <item>Özbekistan</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua Yeni Gine</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Pitcairn Adaları</item>
+        <item>Polonya</item>
+        <item>Portekiz</item>
+        <item>Porto Riko</item>
+        <item>Reunion</item>
+        <item>Romanya</item>
+        <item>Ruanda</item>
+        <item>Rusya</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts ve Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Pierre ve Miquelon</item>
+        <item>Saint Vincent ve Grenadinler</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Senegal</item>
+        <item>Seyşeller</item>
+        <item>Sierra Leone</item>
+        <item>Singapur</item>
+        <item>Slovakya</item>
+        <item>Slovenya</item>
+        <item>Solomon Adaları</item>
+        <item>Somali</item>
+        <item>Sqo Tome ve Principe</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Surinam</item>
+        <item>Suriye</item>
+        <item>Suudi Arabistan</item>
+        <item>Svalbard ve Jan Mayen</item>
+        <item>Svaziland</item>
+        <item>Sırbistan</item>
+        <item>Şili</item>
+        <item>Tacikistan</item>
+        <item>Tanzanya</item>
+        <item>Tayland</item>
+        <item>Tayvan</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad ve Tobago</item>
+        <item>Tunus</item>
+        <item>Turks ve Caicos Adaları</item>
+        <item>Tuvalu</item>
+        <item>Türkiye</item>
+        <item>Türkmenistan</item>
+        <item>Uganda</item>
+        <item>Ukrayna</item>
+        <item>Umman</item>
+        <item>United Kingdom</item>
+        <item>Uruguay</item>
+        <item>Vanuatu</item>
+        <item>Vatikan </item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Virgin Adaları</item>
+        <item>Wallis ve Futuna</item>
+        <item>Yemen</item>
+        <item>Yeni Kaledonya</item>
+        <item>Yeni Zelanda</item>
+        <item>Yugoslavya</item>
+        <item>Yunanistan</item>
+        <item>Zambiya</item>
+        <item>Zimbabve</item>
+    </string-array>
+</resources>

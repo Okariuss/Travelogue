@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="180dp"
+    android:id="@+id/company_card_view"
+    android:layout_height="210dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#f2edd7"
+    app:cardCornerRadius="6dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="5dp">
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:id="@+id/company_image"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:id="@+id/recycler_company_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/company_item_name"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/baloo"
+
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/company_item_desc"
+            android:text="londra dünyanın en güzel ikinci şehridir. Çünkü birinci şehri baküdür"
+            android:textAlignment="center"
+            android:fontFamily="@font/cherry_swash"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:layout_alignTop="@+id/company_item_name"
+            android:layout_marginTop="30dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

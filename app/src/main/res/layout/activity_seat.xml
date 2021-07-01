@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SeatActivity"
+    android:background="@color/primaryLightColor"
+    >
+
+    <LinearLayout
+        android:id="@+id/seat_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/primaryColor">
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:background="#00000000"
+            android:onClick="goBack"
+            android:layout_gravity="center"
+            android:tint="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/seat_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Seat Selection"
+            android:layout_marginTop="-6dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/seat_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/seat_tab_layout"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:id="@+id/seat_color_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/seat_select_layout"
+            android:layout_marginBottom="5dp"
+            >
+
+            <View
+                android:id="@+id/seat_red_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border_res_red" />
+            <TextView
+                android:id="@+id/seat_busy_seat"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Busy Seat"/>
+            <View
+                android:layout_marginStart="10dp"
+                android:id="@+id/seat_blue_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border_res_blue"/>
+            <TextView
+                android:id="@+id/large_area_seat"
+                android:layout_marginStart="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Large area seat"/>
+            <View
+                android:id="@+id/seat_empty_view"
+                android:layout_width="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border_res"/>
+            <TextView
+                android:id="@+id/empty_seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/black"
+                android:text="Empty Seat"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/free_seat_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seat_color_linear"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/add_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/amaranth"
+                android:text="Large area seats will add to the total price."
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/seat_select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"
+            >
+
+            <TextView
+                android:id="@+id/seat_select_passenger_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Select Seat For 3 Passenger:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/select_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:textColor="@color/white"
+                android:backgroundTint="#F38908"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seats_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/seat_relative_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="1dp" />
+
+
+</RelativeLayout>

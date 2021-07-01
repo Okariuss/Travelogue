@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.okada.travelogue"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+apply plugin: 'com.google.gms.google-services'
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-firestore:22.1.2'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //Firebase implementation
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+    implementation 'com.google.firebase:firebase-auth'
+    //Animations between activities
+    implementation 'com.github.mohammadatif:Animatoo:master'
+    //Bottom navigation (meow library) implementation
+    implementation 'com.etebarian:meow-bottom-navigation-java:1.2.0'
+    //Boom menu implementation
+    implementation 'com.nightonke:boommenu:2.1.1'
+    //Lottie (lottie animation) implementation
+    implementation 'com.airbnb.android:lottie:3.7.0'
+    //Picasso implementation (for getting image from url)
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Circle Image View implementation
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Chip navigation implementation for find ticket activity
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.2'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.0'
+    //Searchable Spinner implementation
+   // implementation 'gr.escsoft.michaelprimez.searchablespinner:SearchableSpinner:1.0.9'
+    //
+    implementation "com.github.skydoves:powerspinner:1.1.7"
+}

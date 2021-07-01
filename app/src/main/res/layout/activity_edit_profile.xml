@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLightColor"
+    tools:context=".Activity.EditProfileActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primaryColor">
+        <ImageButton
+            android:layout_marginStart="5dp"
+            android:onClick="toBackActivity"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:background="#00000000"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/settings_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="Edit Profile"
+            android:layout_marginTop="-6dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_profile_name_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/primaryDarkColor"
+            app:hintTextColor="@color/primaryDarkColor"
+            app:startIconDrawable="@drawable/name_icon"
+            app:endIconMode="clear_text"
+            android:layout_marginBottom="20dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_profile_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Name"
+                android:inputType="text"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_profile_surname_text_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/primaryDarkColor"
+            app:hintTextColor="@color/primaryDarkColor"
+            app:startIconDrawable="@drawable/name_icon"
+            app:endIconMode="clear_text"
+            android:layout_marginBottom="20dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_profile_surname_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Surname"
+                android:inputType="text"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/date_picker_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_shape_black">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_baseline_date_range_24"
+                    android:layout_marginStart="10dp" />
+                <TextView
+                    android:id="@+id/edit_profile_date_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of birthday"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/edit_profile_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:calendarTextColor="@color/black"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                 />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/save_changes_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/primaryDarkColor"
+            android:gravity="center"
+            android:onClick="save"
+            android:text="Save Changes"
+            android:textColor="@color/white"
+            android:layout_below="@id/sign_up_confirm_password_layout"
+            android:transitionName="sign_up_btn" />
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

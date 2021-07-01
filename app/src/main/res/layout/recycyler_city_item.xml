@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_city_card_view"
+    android:layout_width="150dp"
+    android:layout_height="210dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#f2edd7"
+    app:cardCornerRadius="6dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+   >
+    <RelativeLayout
+        android:id="@+id/recycler_city_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/recycler_city_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="@color/black"
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:id="@+id/item_city_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/logo" />
+
+        <RatingBar
+            android:id="@+id/item_rating_bar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_marginStart="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="110dp"
+            android:progressTint="#000000"
+            android:rating="3.5" />
+
+        <TextView
+            android:id="@+id/item_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_rating_bar"
+            android:layout_marginStart="13dp"
+            android:fontFamily="@font/baloo"
+            android:text="London"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginTop="-12dp"
+            android:id="@+id/item_city_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_city_name"
+            android:fontFamily="@font/cherry_swash"
+            android:padding="8dp"
+            android:textSize="13sp"
+            android:text="London is big city of England"
+            android:textColor="#515151" />
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

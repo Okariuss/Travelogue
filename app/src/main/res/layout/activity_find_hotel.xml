@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FindHotelActivity"
+    android:orientation="vertical"
+    android:background="@color/primaryLightColor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primaryColor">
+
+        <ImageButton
+            android:id="@+id/find_hotel_back_button"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:onClick="goBack"
+            android:background="#00000000"
+            android:tint="@color/white"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+        <TextView
+            android:id="@+id/hotel_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Find Your Hotel"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/find_hotel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_find_hotel_container"
+            android:orientation="vertical"
+            android:padding="15dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:src="@drawable/ic_baseline_location_city_24"
+                    app:tint="@color/black" />
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/SearchableSpinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/doppio_one"
+                    android:gravity="center_vertical"
+                    android:hint="City"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="14.5sp"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="8dp"
+                    app:spinner_arrow_tint="@color/black"
+                    app:spinner_divider_show="false"
+                    app:spinner_popup_animation="fade"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="14dp"
+                    app:spinner_popup_height="150dp" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/find_hotel_entry_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:src="@drawable/ic_baseline_date_range_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/find_hotel_entry_date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/doppio_one"
+                    android:layout_marginStart="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Entry Date"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/find_hotel_leaving_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:src="@drawable/ic_baseline_date_range_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/find_hotel_leaving_date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/doppio_one"
+                    android:layout_marginStart="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Leaving Date"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14.5sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:src="@drawable/ic_baseline_meeting_room_24"
+                    app:tint="@color/black"
+                    />
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/SearchableSpinnerRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="Room"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14.5sp"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="8dp"
+                    android:fontFamily="@font/doppio_one"
+                    app:spinner_arrow_tint="@color/black"
+                    app:spinner_divider_show="false"
+                    app:spinner_popup_animation="fade"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="14dp"
+                    app:spinner_popup_height="150dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/search_button_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#3E77A8"
+                android:elevation="28dp"
+                android:onClick="search"
+                android:text="Search"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/find_ship_travelogue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/find_hotel_layout"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="Travelogue"
+            android:layout_marginTop="40dp"
+            android:textColor="#9B6AE1"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/find_hotel_travel_with_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/find_ship_travelogue"
+            android:fontFamily="@font/amarante"
+            android:textColor="#AF88E6"
+            android:text="Travel with us to experience the difference."
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

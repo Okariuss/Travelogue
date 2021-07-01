@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignInStartActivity"
+    android:background="@color/primaryLightColor"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/signInStartLogoImage"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/logo"
+        android:transitionName="sign_in_start_logo_image"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:id="@+id/signInStartTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Welcome Back"
+        android:transitionName="sign_in_start_text_view"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInStartLogoImage" />
+</LinearLayout>

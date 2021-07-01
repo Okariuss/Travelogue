@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUp2Activity"
+    android:orientation="vertical"
+    android:background="@color/primaryLightColor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="-15dp"
+            android:src="@drawable/logo"
+            android:transitionName="sign_in_start_logo_image" />
+
+        <TextView
+            android:id="@+id/signInStartTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-30dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Welcome"
+            android:textSize="30sp"
+            android:transitionName="sign_in_start_text_view" />
+        <TextView
+            android:id="@+id/signInStartTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Sign up to continue"
+            android:textSize="23sp"
+            android:textStyle="italic"
+            android:transitionName="sign_up_to_continue"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/date_picker_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_shape_black">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_baseline_date_range_24"
+                    android:layout_marginStart="10dp" />
+                <TextView
+                    android:id="@+id/date_of_birth_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of birthday"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/sign_up_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:calendarTextColor="@color/black"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:transitionName="to_date_picker" />
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_up_password_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/primaryDarkColor"
+            android:layout_marginBottom="5dp"
+            app:passwordToggleEnabled="true"
+            android:transitionName="sign_up_password_layout"
+            app:hintTextColor="@color/primaryDarkColor"
+            android:layout_below="@id/date_picker_linear"
+            app:startIconDrawable="@drawable/ic_baseline_password_key_24"
+            android:hint="Password"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_up_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_up_confirm_password_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/primaryDarkColor"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="10dp"
+            app:hintTextColor="@color/primaryDarkColor"
+            android:layout_below="@id/sign_up_password_layout"
+            app:startIconDrawable="@drawable/ic_baseline_password_key_24"
+            android:hint="Confirm password"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_up_confirm_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/primaryDarkColor"
+            android:gravity="center"
+            android:onClick="createAccount"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:layout_below="@id/sign_up_confirm_password_layout"
+            android:transitionName="sign_up_btn" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/create_account_button"
+            android:transitionName="sign_up_already_have_layout"
+            >
+
+            <TextView
+                android:id="@+id/already_have_acc_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="19sp"
+                />
+
+            <TextView
+                android:id="@+id/already_have_acc_sign_in_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:onClick="toSignIn"
+                android:text="Sign In"
+                android:textSize="19sp" />
+        </LinearLayout>
+            <ProgressBar
+                android:id="@+id/sign_up2_progress_bar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:elevation="4dp"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_shape"
+                android:indeterminateTint="@color/black"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

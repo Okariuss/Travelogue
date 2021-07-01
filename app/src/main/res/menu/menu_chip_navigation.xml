@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_plane_item"
+        android:title="Plane"
+        android:icon="@drawable/ic_baseline_airplanemode_active_24"
+        app:cnb_backgroundColor="#ffc400"
+        app:cnb_textColor="@color/white"
+        app:cnb_iconColor="@color/white"
+        />
+    <item
+        android:id="@+id/menu_bus_item"
+        android:title="Bus"
+        android:icon="@drawable/ic_baseline_directions_bus_24"
+        app:cnb_backgroundColor="#5B9BCC"
+        app:cnb_textColor="@color/white"
+        app:cnb_iconColor="@color/white"
+        />
+    <item
+        android:id="@+id/menu_ship_item"
+        android:title="Ship"
+        android:icon="@drawable/ic_baseline_directions_boat_filled_24"
+        app:cnb_backgroundColor="#64dd17"
+        app:cnb_textColor="@color/white"
+        app:cnb_iconColor="@color/white"
+        />
+
+
+</menu>

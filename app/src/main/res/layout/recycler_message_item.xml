@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_message_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="end"
+    >
+
+    <TextView
+        android:id="@+id/recycler_message_item_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/user_message_circle_drawable"
+        android:fontFamily="@font/amaranth"
+        android:maxWidth="280dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="selam selam selam sela msel amselams elamse lam"
+        android:textSize="20sp" />
+
+</LinearLayout>
