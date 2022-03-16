@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Okariuss 
-Suleyman1406
-/
-Travelogue
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Travelogue/README.md
-@Suleyman1406
-Suleyman1406 Update README.md
-Latest commit 3821303 on 13 Feb
- History
- 1 contributor
-94 lines (64 sloc)  3.09 KB
-  
 # Travelogue
 
 ### This is an example of a travel ticket purchase and hotel rental android application.
